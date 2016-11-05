@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MesosferErrorCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mesosfer </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Eyro Labs</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MesosferErrorCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>MFConstant.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">MesosferErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p><code>MesosferErrorCode</code> enum contains all custom error codes that are used as <code>code</code> for <code>NSError</code> for callbacks on all classes.</p>
+
+<p>These codes are used when <code>domain</code> of <code>NSError</code> that you receive is set to <code>MesosferErrorDomain</code>.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, MesosferErrorCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInternalServer</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidAppIdAndClientKey</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorConnectionFailed</a> = 100,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorObjectNotFound</a> = 101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidQuery</a> = 102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidBucketName</a> = 103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorMissingObjectId</a> = 104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidKeyName</a> = 105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidPointer</a> = 106,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidJSON</a> = 107,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorCommandUnavailable</a> = 108,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorIncorrectType</a> = 111,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidChannelName</a> = 112,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidDeviceToken</a> = 114,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorPushMisconfigured</a> = 115,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorOperationForbidden</a> = 119,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorCacheMiss</a> = 120,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidNestedKey</a> = 121,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidFileName</a> = 122,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidACL</a> = 123,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorTimeout</a> = 124,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidEmailAddress</a> = 125,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorDuplicateValue</a> = 137,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidRoleName</a> = 139,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidServerResponse</a> = 148,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorRequestLimitExceeded</a> = 155,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidEventName</a> = 160,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUsernameMissing</a> = 200,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserPasswordMissing</a> = 201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUsernameTaken</a> = 202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserEmailTaken</a> = 203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserEmailMissing</a> = 204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserWithEmailNotFound</a> = 205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserCannotBeAlteredWithoutSession</a> = 206,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserCanOnlyBeCreatedThroughSignUp</a> = 207,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorInvalidSessionToken</a> = 209,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kErrorUserIdMismatch</a> = 209,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="kErrorInternalServer"></a><code>kErrorInternalServer</code></dt>
+<dd>
+
+
+<pre><code> Internal server error. No information available.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidAppIdAndClientKey"></a><code>kErrorInvalidAppIdAndClientKey</code></dt>
+<dd>
+
+
+<pre><code> Application id or client key is invalid.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorConnectionFailed"></a><code>kErrorConnectionFailed</code></dt>
+<dd>
+
+
+<pre><code> The connection to the Mesosfer servers failed.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorObjectNotFound"></a><code>kErrorObjectNotFound</code></dt>
+<dd>
+
+
+<pre><code> Object doesn't exist, or has an incorrect password.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidQuery"></a><code>kErrorInvalidQuery</code></dt>
+<dd>
+
+
+<pre><code> You tried to find values matching a datatype that doesn't
+ support exact database matching, like an array or a dictionary.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidBucketName"></a><code>kErrorInvalidBucketName</code></dt>
+<dd>
+
+
+<pre><code> Missing or invalid bucket name. Bucket names are case-sensitive.
+ They must start with a letter, and `a-zA-Z0-9` are the only valid characters.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorMissingObjectId"></a><code>kErrorMissingObjectId</code></dt>
+<dd>
+
+
+<pre><code> Missing object id.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidKeyName"></a><code>kErrorInvalidKeyName</code></dt>
+<dd>
+
+
+<pre><code> Invalid key name. Keys are case-sensitive.
+ They must start with a letter, and `a-zA-Z0-9` are the only valid characters.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidPointer"></a><code>kErrorInvalidPointer</code></dt>
+<dd>
+
+
+<pre><code> Malformed pointer. Pointers must be arrays of a classname and an object id.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidJSON"></a><code>kErrorInvalidJSON</code></dt>
+<dd>
+
+
+<pre><code> Malformed json object. A json dictionary is expected.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorCommandUnavailable"></a><code>kErrorCommandUnavailable</code></dt>
+<dd>
+
+
+<pre><code> Tried to access a feature only available internally.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorIncorrectType"></a><code>kErrorIncorrectType</code></dt>
+<dd>
+
+
+<pre><code> Field set to incorrect type.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidChannelName"></a><code>kErrorInvalidChannelName</code></dt>
+<dd>
+
+
+<pre><code> Invalid channel name. A channel name is either an empty string (the broadcast channel)
+ or contains only `a-zA-Z0-9_` characters and starts with a letter.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidDeviceToken"></a><code>kErrorInvalidDeviceToken</code></dt>
+<dd>
+
+
+<pre><code> Invalid device token.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorPushMisconfigured"></a><code>kErrorPushMisconfigured</code></dt>
+<dd>
+
+
+<pre><code> Push is misconfigured. See details to find out how.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorOperationForbidden"></a><code>kErrorOperationForbidden</code></dt>
+<dd>
+
+
+<pre><code> That operation isn't allowed for clients.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorCacheMiss"></a><code>kErrorCacheMiss</code></dt>
+<dd>
+
+
+<pre><code> The results were not found in the cache.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidNestedKey"></a><code>kErrorInvalidNestedKey</code></dt>
+<dd>
+
+
+<pre><code> Keys in `NSDictionary` values may not include `$` or `.`.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidFileName"></a><code>kErrorInvalidFileName</code></dt>
+<dd>
+
+
+<pre><code> Invalid file name.
+ A file name can contain only `a-zA-Z0-9_.` characters and should be between 1 and 36 characters.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidACL"></a><code>kErrorInvalidACL</code></dt>
+<dd>
+
+
+<pre><code> Invalid ACL. An ACL with an invalid format was saved. This should not happen if you use `ACL`.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorTimeout"></a><code>kErrorTimeout</code></dt>
+<dd>
+
+
+<pre><code> The request timed out on the server. Typically this indicates the request is too expensive.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidEmailAddress"></a><code>kErrorInvalidEmailAddress</code></dt>
+<dd>
+
+
+<pre><code> The email address was invalid.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorDuplicateValue"></a><code>kErrorDuplicateValue</code></dt>
+<dd>
+
+
+<pre><code> A unique field was given a value that is already taken.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidRoleName"></a><code>kErrorInvalidRoleName</code></dt>
+<dd>
+
+
+<pre><code> Role's name is invalid.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidServerResponse"></a><code>kErrorInvalidServerResponse</code></dt>
+<dd>
+
+
+<pre><code> The Apple server response is not valid.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorRequestLimitExceeded"></a><code>kErrorRequestLimitExceeded</code></dt>
+<dd>
+
+
+<pre><code> Application has exceeded its request limit.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidEventName"></a><code>kErrorInvalidEventName</code></dt>
+<dd>
+
+
+<pre><code> Invalid event name.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUsernameMissing"></a><code>kErrorUsernameMissing</code></dt>
+<dd>
+
+
+<pre><code> Username is missing or empty.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserPasswordMissing"></a><code>kErrorUserPasswordMissing</code></dt>
+<dd>
+
+
+<pre><code> Password is missing or empty.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUsernameTaken"></a><code>kErrorUsernameTaken</code></dt>
+<dd>
+
+
+<pre><code> Username has already been taken.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserEmailTaken"></a><code>kErrorUserEmailTaken</code></dt>
+<dd>
+
+
+<pre><code> Email has already been taken.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserEmailMissing"></a><code>kErrorUserEmailMissing</code></dt>
+<dd>
+
+
+<pre><code> The email is missing, and must be specified.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserWithEmailNotFound"></a><code>kErrorUserWithEmailNotFound</code></dt>
+<dd>
+
+
+<pre><code> A user with the specified email was not found.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserCannotBeAlteredWithoutSession"></a><code>kErrorUserCannotBeAlteredWithoutSession</code></dt>
+<dd>
+
+
+<pre><code> The user cannot be altered by a client without the session.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserCanOnlyBeCreatedThroughSignUp"></a><code>kErrorUserCanOnlyBeCreatedThroughSignUp</code></dt>
+<dd>
+
+
+<pre><code> Users can only be created through sign up.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorInvalidSessionToken"></a><code>kErrorInvalidSessionToken</code></dt>
+<dd>
+
+
+<pre><code> Error code indicating that the current session token is invalid.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kErrorUserIdMismatch"></a><code>kErrorUserIdMismatch</code></dt>
+<dd>
+
+
+<pre><code> Error code indicating that the current session token is invalid.
+</code></pre>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">MFConstant.h</code></p>
+                    </div>
+                    
+                    
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Eyro Labs. All rights reserved. Updated: 2016-11-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
