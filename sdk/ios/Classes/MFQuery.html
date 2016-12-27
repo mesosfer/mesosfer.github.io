@@ -144,7 +144,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <code>MFQuery</code> class defines a query that is used to query for <a href="../Classes/MFDataSchema.html"><code>MFDataSchema</code></a>s, <a href="../Classes/MFData.html"><code>MFData</code></a>s or <a href="../Classes/MFUser.html"><code>MFUser</code></a>s.</p>
+						<p>The <code>MFQuery</code> class defines a query that is used to query for <a href="../Classes/MFDataSchema.html"><code>MFDataSchema</code></a>s, <a href="../Classes/MFData.html"><code>MFData</code></a>s, <a href="../Classes/MFUser.html"><code>MFUser</code></a>s, <a href="../Classes/MFBeacon.html"><code>MFBeacon</code></a>s, <a href="../Classes/MFNotification.html"><code>MFNotification</code></a>s, <a href="../Classes/MFStoryline.html"><code>MFStoryline</code></a>s or <a href="../Classes/MFStorylineDetail.html"><code>MFStorylineDetail</code></a>s.</p>
 					</div>
 					
 					
@@ -272,8 +272,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Add limit on the number of objects to return. The default limit is <code>100</code>, with a
-maximum of 1000 results being returned at a time.</p>
+				<p>Add limit on the number of objects to return. The default limit is <code>100</code>, with a maximum of 1000 results being returned at a time.</p>
 			</div>
 			
 		    
@@ -631,8 +630,7 @@ maximum of 1000 results being returned at a time.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Add a constraint to the query that requires a particular key&rsquo;s object
-to be less than or equal to the provided object.</p>
+				<p>Add a constraint to the query that requires a particular key&rsquo;s object to be less than or equal to the provided object.</p>
 			</div>
 			
 		    
@@ -695,8 +693,7 @@ to be less than or equal to the provided object.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Add a constraint to the query that requires a particular key&rsquo;s object
-to be greater than the provided object.</p>
+				<p>Add a constraint to the query that requires a particular key&rsquo;s object to be greater than the provided object.</p>
 			</div>
 			
 		    
@@ -759,8 +756,7 @@ to be greater than the provided object.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Add a constraint to the query that requires a particular key&rsquo;s
-object to be greater than or equal to the provided object.</p>
+				<p>Add a constraint to the query that requires a particular key&rsquo;s object to be greater than or equal to the provided object.</p>
 			</div>
 			
 		    
@@ -823,8 +819,7 @@ object to be greater than or equal to the provided object.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Add a constraint to the query that requires a particular key&rsquo;s object
-to be not equal to the provided object.</p>
+				<p>Add a constraint to the query that requires a particular key&rsquo;s object to be not equal to the provided object.</p>
 			</div>
 			
 		    
@@ -1338,8 +1333,7 @@ to be not equal to the provided object.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>The block to execute.
-It should have the following argument signature: <code>^(NSArray *objects, NSError *error)</code></p></td>
+						<td><p>The block to execute. It should have the following argument signature: <code>^(NSArray *objects, NSError *error)</code></p></td>
 					</tr>
 				
 				</table>
@@ -1392,8 +1386,7 @@ It should have the following argument signature: <code>^(NSArray *objects, NSErr
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>The block to execute.
-It should have the following argument signature: <code>^(int count, NSError *error)</code></p></td>
+						<td><p>The block to execute. It should have the following argument signature: <code>^(int count, NSError *error)</code></p></td>
 					</tr>
 				
 				</table>
@@ -1431,7 +1424,7 @@ It should have the following argument signature: <code>^(int count, NSError *err
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Gets a <a href="../Classes/MFDataSchema.html"><code>MFDataSchema</code></a> or <a href="../Classes/MFData.html"><code>MFData</code></a> asynchronously and calls the given block with the result.</p>
+				<p>Gets a <a href="../Classes/MFDataSchema.html"><code>MFDataSchema</code></a>, <a href="../Classes/MFData.html"><code>MFData</code></a>, <a href="../Classes/MFBeacon.html"><code>MFBeacon</code></a>, <a href="../Classes/MFNotification.html"><code>MFNotification</code></a>, <a href="../Classes/MFStoryline.html"><code>MFStoryline</code></a> or <a href="../Classes/MFStorylineDetail.html"><code>MFStorylineDetail</code></a> asynchronously and calls the given block with the result.</p>
 			</div>
 			
 		    
@@ -1451,8 +1444,7 @@ It should have the following argument signature: <code>^(int count, NSError *err
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>The block to execute.
-The block should have the following argument signature: <code>^(id object, NSError *error)</code></p></td>
+						<td><p>The block to execute. The block should have the following argument signature: <code>^(id object, NSError *error)</code></p></td>
 					</tr>
 				
 				</table>
@@ -1466,8 +1458,7 @@ The block should have the following argument signature: <code>^(id object, NSErr
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> This method cannot be used for getting object using <a href="../Classes/MFUser.html"><code>MFUser</code></a> objectId&rsquo;s</p></div><div class="warning"><p><strong>Warning:</strong> This method mutates the query.
-It will reset limit to <code>1</code>, skip to <code>0</code> and remove all conditions, leaving only <code>objectId</code>.</p></div>
+				<div class="warning"><p><strong>Warning:</strong> This method cannot be used for getting object using <a href="../Classes/MFUser.html"><code>MFUser</code></a> objectId&rsquo;s</p></div><div class="warning"><p><strong>Warning:</strong> This method mutates the query. It will reset limit to <code>1</code>, skip to <code>0</code> and remove all conditions, leaving only <code>objectId</code>.</p></div>
 			</div>
 			
 
@@ -1538,7 +1529,7 @@ It will reset limit to <code>1</code>, skip to <code>0</code> and remove all con
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Eyro Labs. All rights reserved. Updated: 2016-11-05</p>
+						<p class="copyright">Copyright &copy; 2016 Eyro Labs. All rights reserved. Updated: 2016-12-27</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

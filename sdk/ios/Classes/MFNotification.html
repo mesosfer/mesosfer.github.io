@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MFNotification Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Mesosfer </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Eyro Labs</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/beacon">beacon</option>
+		
+		<option value="//api/name/createdAt">createdAt</option>
+		
+		<option value="//api/name/data">data</option>
+		
+		<option value="//api/name/event">event</option>
+		
+		<option value="//api/name/isEnabled">isEnabled</option>
+		
+		<option value="//api/name/notifDescription">notifDescription</option>
+		
+		<option value="//api/name/objectId">objectId</option>
+		
+		<option value="//api/name/type">type</option>
+		
+		<option value="//api/name/updatedAt">updatedAt</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/notificationWithBeacon:NS_SWIFT_NAME:">+ notificationWithBeacon:NS_SWIFT_NAME:</option>
+		
+		<option value="//api/name/notificationWithBeaconId:NS_SWIFT_NAME:">+ notificationWithBeaconId:NS_SWIFT_NAME:</option>
+		
+		<option value="//api/name/notificationWithObjectId:NS_SWIFT_NAME:">+ notificationWithObjectId:NS_SWIFT_NAME:</option>
+		
+		<option value="//api/name/query">+ query</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/deleteAsyncWithBlock:">- deleteAsyncWithBlock:</option>
+		
+		<option value="//api/name/dictionary">- dictionary</option>
+		
+		<option value="//api/name/fetchAsyncWithBlock:">- fetchAsyncWithBlock:</option>
+		
+		<option value="//api/name/objectForKey:">- objectForKey:</option>
+		
+		<option value="//api/name/objectForKeyedSubscript:">- objectForKeyedSubscript:</option>
+		
+		<option value="//api/name/removeObjectForKey:">- removeObjectForKey:</option>
+		
+		<option value="//api/name/saveAsyncWithBlock:">- saveAsyncWithBlock:</option>
+		
+		<option value="//api/name/setObject:forKey:">- setObject:forKey:</option>
+		
+		<option value="//api/name/setObject:forKeyedSubscript:">- setObject:forKeyedSubscript:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MFNotification Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MFNotification.h<br />MFNotification.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>MFNotification</code> is a custom class that used for storing notification <a href="#//api/name/data">data</a>. This is a simple representation of <a href="../Classes/MFStoryline.html"><code>MFStoryline</code></a> object.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/objectId" title="objectId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectId">&nbsp;&nbsp;objectId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the unique id of <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) NSString *objectId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This field will be assigned by fetching current object that exists or by saving new user to <a href="../Classes/Mesosfer.html">Mesosfer</a> cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createdAt" title="createdAt"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createdAt">&nbsp;&nbsp;createdAt</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the created timestamp of <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) NSDate *createdAt</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This field will be assigned by fetching current object that exists or by saving new user to <a href="../Classes/Mesosfer.html">Mesosfer</a> cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatedAt" title="updatedAt"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatedAt">&nbsp;&nbsp;updatedAt</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the last updated timestamp of <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) NSDate *updatedAt</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This field will be assigned by fetching current object that exists or by saving new user to <a href="../Classes/Mesosfer.html">Mesosfer</a> cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/event" title="event"></a>
+	<h3 class="method-title"><code><a href="#//api/name/event">&nbsp;&nbsp;event</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the <a href="#//api/name/beacon">beacon</a> event of <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) MFBeaconEvent event</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the notification type of <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) MFNotificationType type</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifDescription" title="notifDescription"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifDescription">&nbsp;&nbsp;notifDescription</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the description of <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) NSString *notifDescription</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEnabled" title="isEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEnabled">&nbsp;&nbsp;isEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the state of <code>MFNotification</code> object whether it is enabled or disabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) BOOL isEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beacon" title="beacon"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beacon">&nbsp;&nbsp;beacon</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies a <a href="../Classes/MFBeacon.html"><code>MFBeacon</code></a> object of notification.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, nullable) MFBeacon *beacon</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/data" title="data"></a>
+	<h3 class="method-title"><code><a href="#//api/name/data">&nbsp;&nbsp;data</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies the custom <code>NSDictionary</code> data of <code>MFNotification</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly, nullable) NSDictionary *data</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationWithBeacon:NS_SWIFT_NAME:" title="notificationWithBeacon:NS_SWIFT_NAME:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationWithBeacon:NS_SWIFT_NAME:">+&nbsp;notificationWithBeacon:NS_SWIFT_NAME:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new <code>MFNotification</code> with a <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull instancetype)notificationWithBeacon:(nonnull MFBeacon *)<em>beacon</em> NS_SWIFT_NAME</code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beacon</code></th>
+						<td><p>A <code>MFNotification</code> object of notification.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <code>MFNotification</code> object that is instantiated with the given <code>MFNotification</code> object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationWithBeaconId:NS_SWIFT_NAME:" title="notificationWithBeaconId:NS_SWIFT_NAME:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationWithBeaconId:NS_SWIFT_NAME:">+&nbsp;notificationWithBeaconId:NS_SWIFT_NAME:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new <code>MFNotification</code> with a <code>MFNotification</code> <a href="#//api/name/objectId">objectId</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull instancetype)notificationWithBeaconId:(nonnull NSString *)<em>beaconId</em> NS_SWIFT_NAME</code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beaconId</code></th>
+						<td><p>The object id for the <code>MFNotification</code> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <code>MFNotification</code> object that is instantiated with the given <code>MFNotification</code> <a href="#//api/name/objectId">objectId</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationWithObjectId:NS_SWIFT_NAME:" title="notificationWithObjectId:NS_SWIFT_NAME:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationWithObjectId:NS_SWIFT_NAME:">+&nbsp;notificationWithObjectId:NS_SWIFT_NAME:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a reference to an existing <code>MFNotification</code> for use in creating associations between MFNotifications.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull instancetype)notificationWithObjectId:(nonnull NSString *)<em>objectId</em> NS_SWIFT_NAME</code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>The object id for the referenced <code>MFNotification</code> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <code>MFNotification</code> instance without <a href="#//api/name/data">data</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> You need to call <code>MFNotification.</code>fetchAsyncWithBlock:<code></code> to fetch object from <a href="../Classes/Mesosfer.html">Mesosfer</a> cloud.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/query" title="query"></a>
+	<h3 class="method-title"><code><a href="#//api/name/query">+&nbsp;query</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new <a href="../Classes/MFQuery.html"><code>MFQuery</code></a> instance for querying <code>MFNotification</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nonnull MFQuery *)query</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new <a href="../Classes/MFQuery.html"><code>MFQuery</code></a> instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dictionary" title="dictionary"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dictionary">&ndash;&nbsp;dictionary</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets all key and value pair of <code>MFNotification</code> object in a dictionary.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDictionary *)dictionary</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The dictionary of all key and value pair object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectForKey:" title="objectForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectForKey:">&ndash;&nbsp;objectForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the value associated with a given key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)objectForKey:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>The key for which to return the corresponding value.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/objectForKeyedSubscript:">- objectForKeyedSubscript:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the value associated with a given key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)objectForKeyedSubscript:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>The key for which to return the corresponding value.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method enables usage of literal syntax on <code>MFNotification</code>. E.g. <code>NSString *value = user[@"key"];</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/objectForKey:">- objectForKey:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeObjectForKey:" title="removeObjectForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeObjectForKey:">&ndash;&nbsp;removeObjectForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unsets a key on the object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeObjectForKey:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>The key.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setObject:forKey:" title="setObject:forKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setObject:forKey:">&ndash;&nbsp;setObject:forKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the object associated with a given key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setObject:(nonnull id)<em>object</em> forKey:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>object</code></th>
+						<td><p>The object for <code>key</code>. A strong reference to the object is maintained by MFNotification. Raises an <code>NSInvalidArgumentException</code> if <code>object</code> is <code>nil</code>. If you need to represent a <code>nil</code> value - use <code>NSNull</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>The key for <code>object</code>. Raises an <code>NSInvalidArgumentException</code> if <code>key</code> is <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setObject:forKeyedSubscript:">- setObject:forKeyedSubscript:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setObject:forKeyedSubscript:" title="setObject:forKeyedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setObject:forKeyedSubscript:">&ndash;&nbsp;setObject:forKeyedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the value associated with a given key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setObject:(nonnull id)<em>object</em> forKeyedSubscript:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>object</code></th>
+						<td><p>The object for <code>key</code>. A strong reference to the object is maintained by MFNotification. Raises an <code>NSInvalidArgumentException</code> if <code>object</code> is <code>nil</code>. If you need to represent a <code>nil</code> value - use <code>NSNull</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>The key for <code>object</code>. Raises an <code>NSInvalidArgumentException</code> if <code>key</code> is <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method enables usage of literal syntax on <code>MFNotification</code>. E.g. <code>user[@"key"] = @"value";</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/setObject:forKey:">- setObject:forKey:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchAsyncWithBlock:" title="fetchAsyncWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchAsyncWithBlock:">&ndash;&nbsp;fetchAsyncWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the current <code>MFNotification</code> <a href="#//api/name/data">data</a> from <a href="../Classes/Mesosfer.html">Mesosfer</a> cloud <em>asynchronously</em> and executes the given callback block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchAsyncWithBlock:(nullable MFObjectResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. It shoud have the following argument signature: <code>^(MFNotification *notification, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveAsyncWithBlock:" title="saveAsyncWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveAsyncWithBlock:">&ndash;&nbsp;saveAsyncWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves the <code>MFNotification</code> <em>asynchronously</em> and executes the given callback block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveAsyncWithBlock:(nullable MFBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAsyncWithBlock:" title="deleteAsyncWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAsyncWithBlock:">&ndash;&nbsp;deleteAsyncWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the <code>MFNotification</code> object in <a href="../Classes/Mesosfer.html">Mesosfer</a> cloud <em>asynchronously</em> and executes the given callback block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteAsyncWithBlock:(nullable MFBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Eyro Labs. All rights reserved. Updated: 2016-12-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

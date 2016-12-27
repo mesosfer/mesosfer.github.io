@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MFLogLevel Constants Reference</title>
+	<title>MFStorylineShowDay Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,16 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MFLogLevel Constants Reference</h1>
+					<h1 class="title">MFStorylineShowDay Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
 	<td>MFConstant.h</td>
-</tr><tr>
-	<th>References</th>
-	<td><a href="Classes/Mesosfer.html">Mesosfer.+setLogLevel:</a><br /><a href="Classes/Mesosfer.html">Mesosfer.+logLevel</a></td>
 </tr>
 						</tbody></table></div>
 					
@@ -78,39 +75,20 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">MFLogLevel</h3>
+                    <h3 class="subsubtitle method-title">MFStorylineShowDay</h3>
                     
 					
 					<div class="section section-overview">
-                        <p><code>MFLogLevel</code> enum specifies different levels of logging that could be used to limit or display more messages in logs.</p>
+                        <p><code>MFStorylineShowDay</code> enum specifies show days of storyline.</p>
 
 <ul>
-<li><code>MFLogLevelNone</code>: Log level that disables all logging.</li>
-<li><code>MFLogLevelError</code>: Log level that if set is going to output error messages to the log.</li>
-<li><code>MFLogLevelWarning</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-</ul>
-</li>
-<li><code>MFLogLevelInfo</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-<li>Informational messages</li>
-</ul>
-</li>
-<li><code>MFLogLevelDebug</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-<li>Informational messages</li>
-<li>Debug messages</li>
-</ul>
-</li>
+<li><code>MFStorylineShowDaySunday</code>: Storyline show day for Sunday.</li>
+<li><code>MFStorylineShowDayMonday</code>: Storyline show day for Monday.</li>
+<li><code>MFStorylineShowDayTuesday</code>: Storyline show day for Tuesday.</li>
+<li><code>MFStorylineShowDayWednesday</code>: Storyline show day for Wednesday.</li>
+<li><code>MFStorylineShowDayThursday</code>: Storyline show day for Thursday.</li>
+<li><code>MFStorylineShowDayFriday</code>: Storyline show day for Friday.</li>
+<li><code>MFStorylineShowDaySaturday</code>: Storyline show day for Saturday.</li>
 </ul>
 
 					</div>
@@ -120,17 +98,21 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(uint8_t, MFLogLevel ) {<br>
+                        <code>typedef NS_ENUM(uint8_t, MFStorylineShowDay ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelNone</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDaySunday</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelError</a> = 1,<br>
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDayMonday</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelWarning</a> = 2,<br>
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDayTuesday</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelInfo</a> = 3,<br>
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDayWednesday</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelDebug</a> = 4,<br>
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDayThursday</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDayFriday</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MFStorylineShowDaySaturday</a>,<br>
                             
                             };</code>
                     
@@ -140,11 +122,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="MFLogLevelNone"></a><code>MFLogLevelNone</code></dt>
+                            <dt><a name="" title="MFStorylineShowDaySunday"></a><code>MFStorylineShowDaySunday</code></dt>
 <dd>
 
 
-<p>Log level that disables all logging.</p>
+<p>Storyline show day for Sunday.</p>
 
 
 
@@ -157,11 +139,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelError"></a><code>MFLogLevelError</code></dt>
+                            <dt><a name="" title="MFStorylineShowDayMonday"></a><code>MFStorylineShowDayMonday</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output error messages to the log.</p>
+<p>Storyline show day for Monday.</p>
 
 
 
@@ -174,11 +156,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelWarning"></a><code>MFLogLevelWarning</code></dt>
+                            <dt><a name="" title="MFStorylineShowDayTuesday"></a><code>MFStorylineShowDayTuesday</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors &amp; Warnings</p>
+<p>Storyline show day for Tuesday.</p>
 
 
 
@@ -191,11 +173,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelInfo"></a><code>MFLogLevelInfo</code></dt>
+                            <dt><a name="" title="MFStorylineShowDayWednesday"></a><code>MFStorylineShowDayWednesday</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors, Warnings &amp; Informational messages</p>
+<p>Storyline show day for Wednesday.</p>
 
 
 
@@ -208,11 +190,45 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelDebug"></a><code>MFLogLevelDebug</code></dt>
+                            <dt><a name="" title="MFStorylineShowDayThursday"></a><code>MFStorylineShowDayThursday</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors, Warnings, Informational messages &amp; Debug messages</p>
+<p>Storyline show day for Thursday.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MFStorylineShowDayFriday"></a><code>MFStorylineShowDayFriday</code></dt>
+<dd>
+
+
+<p>Storyline show day for Friday.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MFConstant.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MFStorylineShowDaySaturday"></a><code>MFStorylineShowDaySaturday</code></dt>
+<dd>
+
+
+<p>Storyline show day for Saturday.</p>
 
 
 
@@ -232,17 +248,6 @@
                     
                     
 
-                    
-                    <div class="method-subsection see-also-section">
-                        <h4 class="method-subtitle">See Also</h4>
-                        <ul>
-                            
-                            <li><code><p><a href="../Classes/Mesosfer.html">Mesosfer</a>.+setLogLevel:</p></code></li>
-                            
-                            <li><code><p><a href="../Classes/Mesosfer.html">Mesosfer</a>.+logLevel</p></code></li>
-                            
-                        </ul>
-                    </div>
                     
 
                     

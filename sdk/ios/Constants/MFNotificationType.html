@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MFLogLevel Constants Reference</title>
+	<title>MFNotificationType Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,16 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MFLogLevel Constants Reference</h1>
+					<h1 class="title">MFNotificationType Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
 	<td>MFConstant.h</td>
-</tr><tr>
-	<th>References</th>
-	<td><a href="Classes/Mesosfer.html">Mesosfer.+setLogLevel:</a><br /><a href="Classes/Mesosfer.html">Mesosfer.+logLevel</a></td>
 </tr>
 						</tbody></table></div>
 					
@@ -78,39 +75,17 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">MFLogLevel</h3>
+                    <h3 class="subsubtitle method-title">MFNotificationType</h3>
                     
 					
 					<div class="section section-overview">
-                        <p><code>MFLogLevel</code> enum specifies different levels of logging that could be used to limit or display more messages in logs.</p>
+                        <p><code>MFNotificationType</code> enum specifies different type of storyline campaign.</p>
 
 <ul>
-<li><code>MFLogLevelNone</code>: Log level that disables all logging.</li>
-<li><code>MFLogLevelError</code>: Log level that if set is going to output error messages to the log.</li>
-<li><code>MFLogLevelWarning</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-</ul>
-</li>
-<li><code>MFLogLevelInfo</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-<li>Informational messages</li>
-</ul>
-</li>
-<li><code>MFLogLevelDebug</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-<li>Informational messages</li>
-<li>Debug messages</li>
-</ul>
-</li>
+<li><code>MFNotificationTypeText</code>: Notification type for showing alert/notification by text campaign.</li>
+<li><code>MFNotificationTypeImage</code>: Notification type for showing image campaign.</li>
+<li><code>MFNotificationTypeVideo</code>: Notification type for showing video campaign.</li>
+<li><code>MFNotificationTypeUrl</code>: Notification type for showing url webpage campaign.</li>
 </ul>
 
 					</div>
@@ -120,17 +95,15 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(uint8_t, MFLogLevel ) {<br>
+                        <code>typedef NS_ENUM(uint8_t, MFNotificationType ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelNone</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">MFNotificationTypeText</a> = MFStorylineCampaignText,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelError</a> = 1,<br>
+                            &nbsp;&nbsp; <a href="">MFNotificationTypeImage</a> = MFStorylineCampaignImage,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelWarning</a> = 2,<br>
+                            &nbsp;&nbsp; <a href="">MFNotificationTypeVideo</a> = MFStorylineCampaignVideo,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelInfo</a> = 3,<br>
-                            
-                            &nbsp;&nbsp; <a href="">MFLogLevelDebug</a> = 4,<br>
+                            &nbsp;&nbsp; <a href="">MFNotificationTypeUrl</a> = MFStorylineCampaignUrl,<br>
                             
                             };</code>
                     
@@ -140,11 +113,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="MFLogLevelNone"></a><code>MFLogLevelNone</code></dt>
+                            <dt><a name="" title="MFNotificationTypeText"></a><code>MFNotificationTypeText</code></dt>
 <dd>
 
 
-<p>Log level that disables all logging.</p>
+<p>Notification type for showing alert/notification by text campaign.</p>
 
 
 
@@ -157,11 +130,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelError"></a><code>MFLogLevelError</code></dt>
+                            <dt><a name="" title="MFNotificationTypeImage"></a><code>MFNotificationTypeImage</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output error messages to the log.</p>
+<p>Notification type for showing image campaign.</p>
 
 
 
@@ -174,11 +147,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelWarning"></a><code>MFLogLevelWarning</code></dt>
+                            <dt><a name="" title="MFNotificationTypeVideo"></a><code>MFNotificationTypeVideo</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors &amp; Warnings</p>
+<p>Notification type for showing video campaign.</p>
 
 
 
@@ -191,28 +164,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelInfo"></a><code>MFLogLevelInfo</code></dt>
+                            <dt><a name="" title="MFNotificationTypeUrl"></a><code>MFNotificationTypeUrl</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors, Warnings &amp; Informational messages</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">MFConstant.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="MFLogLevelDebug"></a><code>MFLogLevelDebug</code></dt>
-<dd>
-
-
-<p>Log level that if set is going to output the following messages to log: Errors, Warnings, Informational messages &amp; Debug messages</p>
+<p>Notification type for showing url webpage campaign.</p>
 
 
 
@@ -232,17 +188,6 @@
                     
                     
 
-                    
-                    <div class="method-subsection see-also-section">
-                        <h4 class="method-subtitle">See Also</h4>
-                        <ul>
-                            
-                            <li><code><p><a href="../Classes/Mesosfer.html">Mesosfer</a>.+setLogLevel:</p></code></li>
-                            
-                            <li><code><p><a href="../Classes/Mesosfer.html">Mesosfer</a>.+logLevel</p></code></li>
-                            
-                        </ul>
-                    </div>
                     
 
                     

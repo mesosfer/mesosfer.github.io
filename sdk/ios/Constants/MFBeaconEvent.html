@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MFLogLevel Constants Reference</title>
+	<title>MFBeaconEvent Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,16 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MFLogLevel Constants Reference</h1>
+					<h1 class="title">MFBeaconEvent Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
 	<td>MFConstant.h</td>
-</tr><tr>
-	<th>References</th>
-	<td><a href="Classes/Mesosfer.html">Mesosfer.+setLogLevel:</a><br /><a href="Classes/Mesosfer.html">Mesosfer.+logLevel</a></td>
 </tr>
 						</tbody></table></div>
 					
@@ -78,39 +75,18 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">MFLogLevel</h3>
+                    <h3 class="subsubtitle method-title">MFBeaconEvent</h3>
                     
 					
 					<div class="section section-overview">
-                        <p><code>MFLogLevel</code> enum specifies different levels of logging that could be used to limit or display more messages in logs.</p>
+                        <p><code>MFBeaconEvent</code> enum specifies different events of beacon.</p>
 
 <ul>
-<li><code>MFLogLevelNone</code>: Log level that disables all logging.</li>
-<li><code>MFLogLevelError</code>: Log level that if set is going to output error messages to the log.</li>
-<li><code>MFLogLevelWarning</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-</ul>
-</li>
-<li><code>MFLogLevelInfo</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-<li>Informational messages</li>
-</ul>
-</li>
-<li><code>MFLogLevelDebug</code>: Log level that if set is going to output the following messages to log:
-
-<ul>
-<li>Errors</li>
-<li>Warnings</li>
-<li>Informational messages</li>
-<li>Debug messages</li>
-</ul>
-</li>
+<li><code>MFBeaconEventEnter</code>: Triggered event when user entering a beacon region.</li>
+<li><code>MFBeaconEventExit</code>: Triggered event when user exiting a beacon region.</li>
+<li><code>MFBeaconEventImmediate</code>: Triggered event when user range &lt;1 metre from a beacon.</li>
+<li><code>MFBeaconEventNear</code>: Triggered event when user range is within 1-3 metres from a beacon.</li>
+<li><code>MFBeaconEventFar</code>: Triggered event when user range >3 metres from a beacon.</li>
 </ul>
 
 					</div>
@@ -120,17 +96,17 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(uint8_t, MFLogLevel ) {<br>
+                        <code>typedef NS_ENUM(uint8_t, MFBeaconEvent ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelNone</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">MFBeaconEventEnter</a> = 10,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelError</a> = 1,<br>
+                            &nbsp;&nbsp; <a href="">MFBeaconEventExit</a> = 11,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelWarning</a> = 2,<br>
+                            &nbsp;&nbsp; <a href="">MFBeaconEventImmediate</a> = 20,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelInfo</a> = 3,<br>
+                            &nbsp;&nbsp; <a href="">MFBeaconEventNear</a> = 21,<br>
                             
-                            &nbsp;&nbsp; <a href="">MFLogLevelDebug</a> = 4,<br>
+                            &nbsp;&nbsp; <a href="">MFBeaconEventFar</a> = 22,<br>
                             
                             };</code>
                     
@@ -140,11 +116,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="MFLogLevelNone"></a><code>MFLogLevelNone</code></dt>
+                            <dt><a name="" title="MFBeaconEventEnter"></a><code>MFBeaconEventEnter</code></dt>
 <dd>
 
 
-<p>Log level that disables all logging.</p>
+<p>Triggered event when user entering a beacon region.</p>
 
 
 
@@ -157,11 +133,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelError"></a><code>MFLogLevelError</code></dt>
+                            <dt><a name="" title="MFBeaconEventExit"></a><code>MFBeaconEventExit</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output error messages to the log.</p>
+<p>Triggered event when user exiting a beacon region.</p>
 
 
 
@@ -174,11 +150,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelWarning"></a><code>MFLogLevelWarning</code></dt>
+                            <dt><a name="" title="MFBeaconEventImmediate"></a><code>MFBeaconEventImmediate</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors &amp; Warnings</p>
+<p>Triggered event when user range &lt;1 metre from a beacon.</p>
 
 
 
@@ -191,11 +167,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelInfo"></a><code>MFLogLevelInfo</code></dt>
+                            <dt><a name="" title="MFBeaconEventNear"></a><code>MFBeaconEventNear</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors, Warnings &amp; Informational messages</p>
+<p>Triggered event when user range is within 1-3 metres from a beacon.</p>
 
 
 
@@ -208,11 +184,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MFLogLevelDebug"></a><code>MFLogLevelDebug</code></dt>
+                            <dt><a name="" title="MFBeaconEventFar"></a><code>MFBeaconEventFar</code></dt>
 <dd>
 
 
-<p>Log level that if set is going to output the following messages to log: Errors, Warnings, Informational messages &amp; Debug messages</p>
+<p>Triggered event when user range >3 metres from a beacon.</p>
 
 
 
@@ -232,17 +208,6 @@
                     
                     
 
-                    
-                    <div class="method-subsection see-also-section">
-                        <h4 class="method-subtitle">See Also</h4>
-                        <ul>
-                            
-                            <li><code><p><a href="../Classes/Mesosfer.html">Mesosfer</a>.+setLogLevel:</p></code></li>
-                            
-                            <li><code><p><a href="../Classes/Mesosfer.html">Mesosfer</a>.+logLevel</p></code></li>
-                            
-                        </ul>
-                    </div>
                     
 
                     
