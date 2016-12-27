@@ -78,8 +78,6 @@
 		
 		<option value="//api/name/findAsyncWithBlock:">- findAsyncWithBlock:</option>
 		
-		<option value="//api/name/getObjectAsyncWithId:withBlock:">- getObjectAsyncWithId:withBlock:</option>
-		
 		<option value="//api/name/orderByAscending:">- orderByAscending:</option>
 		
 		<option value="//api/name/orderByDescending:">- orderByDescending:</option>
@@ -1397,69 +1395,6 @@
 
 			
 
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MFQuery.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getObjectAsyncWithId:withBlock:" title="getObjectAsyncWithId:withBlock:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getObjectAsyncWithId:withBlock:">&ndash;&nbsp;getObjectAsyncWithId:withBlock:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Gets a <a href="../Classes/MFDataSchema.html"><code>MFDataSchema</code></a>, <a href="../Classes/MFData.html"><code>MFData</code></a>, <a href="../Classes/MFBeacon.html"><code>MFBeacon</code></a>, <a href="../Classes/MFNotification.html"><code>MFNotification</code></a>, <a href="../Classes/MFStoryline.html"><code>MFStoryline</code></a> or <a href="../Classes/MFStorylineDetail.html"><code>MFStorylineDetail</code></a> asynchronously and calls the given block with the result.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getObjectAsyncWithId:(nonnull NSString *)<em>objectId</em> withBlock:(nullable MFObjectResultBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>objectId</code></th>
-						<td><p>The id of the object that is being requested.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>The block to execute. The block should have the following argument signature: <code>^(id object, NSError *error)</code></p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> This method cannot be used for getting object using <a href="../Classes/MFUser.html"><code>MFUser</code></a> objectId&rsquo;s</p></div><div class="warning"><p><strong>Warning:</strong> This method mutates the query. It will reset limit to <code>1</code>, skip to <code>0</code> and remove all conditions, leaving only <code>objectId</code>.</p></div>
-			</div>
 			
 
 			
